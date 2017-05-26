@@ -1,8 +1,4 @@
 
-function getElementValueById(id) {
-    return document.getElementById(id).value;
-}
-
 function getElementById(id) {
     return document.getElementById(id);
 }
@@ -17,8 +13,8 @@ function setCurrentValueVisible(select) {
 }
 
 function resetDependingContent() {
-    e = getElementById("selectShape");
-    for (i = 0; i < e.options.length; i++) {
+    var e = getElementById("selectShape");
+    for (var i = 0; i < e.options.length; i++) {
         getElementById(e.options[i].value).style.display = 'none';
     }
     setCurrentValueVisible(e);

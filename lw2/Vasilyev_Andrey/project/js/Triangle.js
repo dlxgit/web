@@ -64,9 +64,9 @@ Triangle.prototype.calculateArea = function () {
 }
 
 Triangle.prototype.calculatePerimeter = function () {
-    length1 = Math.sqrt(Math.pow(Math.abs(this.x1 - this.x2),2) + Math.pow(Math.abs(this.y1 - this.y2),2));
-    length2 = Math.sqrt(Math.pow(Math.abs(this.x2 - this.x3),2) + Math.pow(Math.abs(this.y2 - this.y3),2));
-    length3 = Math.sqrt( Math.pow(Math.abs(this.x1 - this.x3),2) + Math.pow(Math.abs(this.y1 - this.y3),2));
+    var length1 = Math.sqrt(Math.pow(Math.abs(this.x1 - this.x2),2) + Math.pow(Math.abs(this.y1 - this.y2),2));
+    var length2 = Math.sqrt(Math.pow(Math.abs(this.x2 - this.x3),2) + Math.pow(Math.abs(this.y2 - this.y3),2));
+    var length3 = Math.sqrt( Math.pow(Math.abs(this.x1 - this.x3),2) + Math.pow(Math.abs(this.y1 - this.y3),2));
     return length1 + length2 + length3;
 }
 

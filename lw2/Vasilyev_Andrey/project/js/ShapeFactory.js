@@ -3,19 +3,20 @@ function ShapeFactory() {
 
 }
 
+
 ShapeFactory.createShape = function (type) {
     var shape;
     if (type == "circle-content") {
         shape = new Circle();
-        var x = getIntValueIfFilled("circle-x");
-        var y = getIntValueIfFilled('circle-y');
+        var xCircle = getIntValueIfFilled("circle-x");
+        var yCircle = getIntValueIfFilled('circle-y');
         var radius = getIntValueIfFilled('circle-radius');
 
-        if (x) {
-            shape.setX(x);
+        if (xCircle) {
+            shape.setX(xCircle);
         }
-        if (y) {
-            shape.setY(y)
+        if (yCircle) {
+            shape.setY(yCircle)
         }
         if (radius) {
             shape.setRadius(radius);
@@ -23,22 +24,22 @@ ShapeFactory.createShape = function (type) {
     }
     else if (type == "rectangle-content") {
         shape = new Rectangle();
-        var x = getIntValueIfFilled("rectangle-x");
-        var y = getIntValueIfFilled('rectangle-y');
-        var width = getIntValueIfFilled('rectangle-width');
-        var height = getIntValueIfFilled('rectangle-height');
+        var xRect = getIntValueIfFilled("rectangle-x");
+        var yRect = getIntValueIfFilled('rectangle-y');
+        var widthRect = getIntValueIfFilled('rectangle-width');
+        var heightRect = getIntValueIfFilled('rectangle-height');
 
-        if (x) {
-            shape.setX(x);
+        if (xRect) {
+            shape.setX(xRect);
         }
-        if (y) {
-            shape.setY(y);
+        if (yRect) {
+            shape.setY(yRect);
         }
-        if (width) { 
-            shape.setWidth(width);
+        if (widthRect) { 
+            shape.setWidth(widthRect);
         }
-        if (height) {
-            shape.setHeight(height);
+        if (heightRect) {
+            shape.setHeight(heightRect);
         }
     }
     else if (type == "triangle-content") {

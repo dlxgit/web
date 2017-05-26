@@ -9,7 +9,7 @@ function drawShape(myShape) {
         myShape.setBorderColor(borderColor.value);
     }
 
-    canvas = getElementById('canvas');
+    var canvas = getElementById('canvas');
     canvas.lineWidth = Shape.LINE_WIDTH;
     clearCanvas();
 
@@ -17,6 +17,6 @@ function drawShape(myShape) {
 }
 
 function clearCanvas() {
-    canvas = getElementById('canvas');
+    var canvas = getElementById('canvas');
     canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
 }
